@@ -1,0 +1,32 @@
+table,td {
+    border : 1px solid white;
+    text-align: center;
+    font-size: medium;
+    margin: 0%;
+    background-color: black;
+    
+}
+p{
+    font-size: 4 px;
+}
+div.ex1
+{
+    max-width: 500px;
+    max-height: 500px;
+  margin: auto;
+ 
+}
+button
+{
+    background-color: black;
+    color: white;
+
+}
+button:hover
+{
+    background-color: rgb(86, 214, 214);
+}
+button:focus
+{
+background-color: chartreuse;
+}
