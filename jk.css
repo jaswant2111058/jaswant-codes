@@ -1,36 +1,40 @@
-table,td {
-    border : 1px solid white;
+table,td
+{
+    border : 1px solid red;
+    width: 10%;
+    align-items: center;
     text-align: center;
     font-size: medium;
     margin: 0%;
-    background-color: black;
+    background-color: white;
+    
+
+}
+h1{
+    text-align: center;
+    text-shadow: 3mm;
+    color: rgb(6, 138, 138);
     
 }
-p{
-    font-size: 4 px;
-}
-div.ex1
-{
-    max-width: 500px;
-    max-height: 500px;
-  margin: auto;
- 
-}
 button
-{
-    background-color: black;
-    color: white;
+{   border :0px;
+    background-color: white;
+    color: black;
+    text-size-adjust: 10px;
 
 }
 button:hover
 {
-    background-color: rgb(86, 214, 214);
+    background-color:  rgb(12, 34, 122);
 }
-button:focus
+div 
 {
-background-color: rgb(106, 188, 25)
-
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.jack
+{
+    background-color: rgb(192, 17, 17);
+}
 
