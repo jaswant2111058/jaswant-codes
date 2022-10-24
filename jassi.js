@@ -53,11 +53,10 @@ function fac()
   document.getElementById("e3").innerHTML = arr[23];
   document.getElementById("e4").innerHTML = arr[24];
   }
-var brry =[];
+var brry =[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 function a1()
 {
-brry.push(1);
-brry.sort();
+brry[1]=2
 
 
 
@@ -66,175 +65,374 @@ brry.sort();
 }
 function a0()
 {
-brry.push(2);
-brry.sort();
+brry[0]=1;
   document.getElementById("a0").style.backgroundColor = "teal";
   document.getElementById("a0j").style.backgroundColor = "teal";
 }
 function a2()
 {
-brry.push(3);
-brry.sort();
+brry[2]=3;
   document.getElementById("a2").style.backgroundColor = "teal";
   document.getElementById("a2j").style.backgroundColor = "teal";
 }
 function a3()
 {
-brry.push(4);
-brry.sort();
+brry[3]=4;
   document.getElementById("a3").style.backgroundColor = "teal";
   document.getElementById("a3j").style.backgroundColor = "teal";
 }
 function a4()
 {
-brry.push(5);
-brry.sort();
+brry[4]=5;
   document.getElementById("a4").style.backgroundColor = "teal";
   document.getElementById("a4j").style.backgroundColor = "teal";
 }
 function b0()
 {
-brry.push(6);
-brry.sort();
+brry[5]=6;
   document.getElementById("b0").style.backgroundColor = "teal";
   document.getElementById("b0j").style.backgroundColor = "teal";
 }
 function b1()
 {
-brry.push(7);
-brry.sort();
+brry[6]=7;
   document.getElementById("b1").style.backgroundColor = "teal";
   document.getElementById("b1j").style.backgroundColor = "teal";
 }
 function b2()
 {
-brry.push(8);
-brry.sort();
+brry[7]=8;
   document.getElementById("b2").style.backgroundColor = "teal";
   document.getElementById("b2j").style.backgroundColor = "teal";
 }
 
 function b3()
 {
-brry.push(9);
-brry.sort();
+brry[8]=9;
   document.getElementById("b3").style.backgroundColor = "teal";
   document.getElementById("b3j").style.backgroundColor = "teal";
 }
 function b4()
 {
-brry.push(10);
-brry.sort();
+brry[9]=10;
   document.getElementById("b4").style.backgroundColor = "teal";
   document.getElementById("b4j").style.backgroundColor = "teal";
 }
 function c0()
 {
-brry.push(11);
-brry.sort();
+brry[10]=11;
   document.getElementById("c0").style.backgroundColor = "teal";
   document.getElementById("c0j").style.backgroundColor = "teal";
 }
 function c1()
 {
-brry.push(12);
-brry.sort();
+brry[11]=12;
+
   document.getElementById("c1").style.backgroundColor = "teal";
   document.getElementById("c1j").style.backgroundColor = "teal";
 }
 function c2()
 {
-brry.push(13);
-brry.sort();;
+brry[12]=13;
+
   document.getElementById("c2").style.backgroundColor = "teal";
   document.getElementById("c2j").style.backgroundColor = "teal";
 }
 function c3()
 {
-brry.push(14);
-brry.sort();
+brry[13]=14;
   document.getElementById("c3").style.backgroundColor = "teal";
   document.getElementById("c3j").style.backgroundColor = "teal";
 }
 function c4()
 {
-brry.push(15);
-brry.sort();
+brry[14]=15;
   document.getElementById("c4").style.backgroundColor = "teal";
   document.getElementById("c4j").style.backgroundColor = "teal";
 }
 function d0()
 {
-brry.push(16);
-brry.sort();
+brry[15]=16;
   document.getElementById("d0").style.backgroundColor = "teal";
   document.getElementById("d0j").style.backgroundColor = "teal";
 }
 function d1()
 {
-brry.push(17);
-brry.sort();
+brry[16]=17;
   document.getElementById("d1").style.backgroundColor = "teal";
   document.getElementById("d1j").style.backgroundColor = "teal";
 }
 function d2()
 {
-brry.push(18);
-brry.sort();
+brry[17]=18;
   document.getElementById("d2").style.backgroundColor = "teal";
   document.getElementById("d2j").style.backgroundColor = "teal";
 }
 function d3()
 {
-brry.push(19);
-brry.sort();
+brry[18]=19;
   document.getElementById("d3").style.backgroundColor = "teal";
   document.getElementById("d3j").style.backgroundColor = "teal";
 }
 function d4()
 {
-brry.push(20);
-brry.sort();
+brry[19]=20;
   document.getElementById("d4").style.backgroundColor = "teal";
   document.getElementById("d4j").style.backgroundColor = "teal";
 }
 function e0()
 {
-brry.push(21);
-brry.sort();
+brry[20]=21;
   document.getElementById("e0").style.backgroundColor = "teal";
   document.getElementById("e0j").style.backgroundColor = "teal";
 }
 function e1()
 {
-brry.push(22);
+brry[21]=22;
  
-brry.sort();
 document.getElementById("e1").style.backgroundColor = "teal";
   document.getElementById("e1j").style.backgroundColor = "teal";
 }
 function e2()
 {
-  brry.push(23);
-brry.sort();
+  brry[22]=23;
+ 
   document.getElementById("e2").style.backgroundColor = "teal";
   document.getElementById("e2j").style.backgroundColor = "teal";
 }
 function e3()
 {
-  brry.push(24);
-  brry.sort();
-  document.getElementById("e3").style.backgroundColor = "teal";
+  brry[23]=24;
+    document.getElementById("e3").style.backgroundColor = "teal";
   document.getElementById("e3j").style.backgroundColor = "teal";
 }
 function e4()
 {
-  brry.push(25);
-  brry.sort();
-  document.getElementById("e4").style.backgroundColor = "teal";
+  brry[24]=25;
+    document.getElementById("e4").style.backgroundColor = "teal";
   document.getElementById("e4j").style.backgroundColor = "teal";
 }
 function bingocheck ()
 {
+  return rowcheck()+columncheck()+diagonalcheck();
+
+}
+
+function search()
+{
+  var x=0;
+  var a=arguments[0];
+  for(let i=0;i<brry.length;i++)
+  {
+      if(a==brry[i])
+      {
+        x=1;
+        break;
+      }
+  }
+  return x;
+}
+function see()
+{
+    for(let i=0;i<brry.length;i++)
+      {
+        console.log(brry[i]);
+      }
+}
+
+function rowcheck()
+{ 
+    let row=5;
+  if(search(1))
+  {
+    for (let i=0;i<4;i++)
+    {
+      if(brry[i]+1!=brry[i+1])
+        {
+            row--;
+            break;
+
+        }
+    }
+  }
+  else row--;
+  if(search(6))
+  {
+    for (let i=5;i<9;i++)
+    {
+      if(brry[i]+1!=brry[i+1])
+        {
+            row--;
+            break;
+
+        }
+    }
+  }
+  else row--;
+  if(search(11))
+  {
+    for (let i=10;i<14;i++)
+    {
+      if(brry[i]+1!=brry[i+1])
+        {
+            row--;
+            break;
+
+        }
+    }
+  }
+  else row--;
+  if(search(16))
+  {
+    for (let i=15;i<19;i++)
+    {
+      if(brry[i]+1!=brry[i+1])
+        {
+            row--;
+            break;
+
+        }
+    }
+  }
+  else row--;
+  if(search(21))
+  {
+    for (let i=20;i<24;i++)
+    {
+      if(brry[i]+1!=brry[i+1])
+        {
+            row--;
+            break;
+
+        }
+    }
+  }
+  else row--;
+  return row;
+}
+function columncheck()
+
+        {
+    
+           let column=5;
+         if(search(1))
+      {
+    for (let i=0;i<16;i=i+5)
+    {
+      if(brry[i]+5!=brry[i+5])
+        {
+            column--;
+            break;
+
+        }
+    }
+  }
+  else column--;
+  if(search(2))
+  {
+    for (let i=1;i<17;i=i+5)
+    {
+      if(brry[i]+5!=brry[i+5])
+        {
+            column--;
+            break;
+
+        }
+    }
+  }
+  else column--;
+  if(search(3))
+  {
+    for (let i=2;i<18;i=i+5)
+    {
+      if(brry[i]+5!=brry[i+5])
+        {
+            column--;
+            break;
+
+        }
+    }
+  }
+  else column--;
+  if(search(4))
+  {
+    for (let i=3;i<19;i=i+5)
+    {
+      if(brry[i]+5!=brry[i+5])
+        {
+            column--;
+            break;
+
+        }
+    }
+  }
+  else column--;
+  if(search(5))
+  {
+    for (let i=4;i<20;i=i+5)
+    {
+      if(brry[i]+5!=brry[i+5])
+        {
+            column--;
+            break;
+
+        }
+    }
+  }
+  else column--;
+  return column;
+}
+function diagonalcheck()
+{ let diago=2;
+    if(search(1))
+  {
+    for (let i=0;i<19;i=i+6)
+    {
+      if(brry[i]+6!=brry[i+6])
+        {
+            diago--;
+            break;
+
+        }
+    }
+  }
+  else diago--;
+  if(search(5))
+  {
+    for (let i=4;i<21;i=i+4)
+    {
+      if(brry[i]+4!=brry[i+4])
+        {
+            diago--;
+            break;
+
+        }
+    }
+  }
+  else diago--;
+  return diago;
   
+}
+function bcheck()
+{
+if(bingocheck()==1)
+{
+    document.getElementById("B").checked=true;
+}
+if(bingocheck()==2)
+{
+    document.getElementById("I").checked=true;
+}
+if(bingocheck()==3)
+{
+    document.getElementById("N").checked=true;
+}
+if(bingocheck()==4)
+{
+    document.getElementById("G").checked=true;
+}
+if(bingocheck()==5)
+{
+    document.getElementById("O").checked=true;
+}
 }
